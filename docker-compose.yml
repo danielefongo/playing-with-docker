@@ -1,8 +1,13 @@
 version: '3'
 services:
+  sqlserver:
+    build: ./sql_server
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=password
   webapp:
     build: ./main
     ports:
       - "8080:80"
-  sqlserver:
-    image: postgres:11-alpine
+  

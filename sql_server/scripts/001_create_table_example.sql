@@ -1,3 +1,4 @@
 CREATE TABLE EXAMPLE(
-    ID INT PRIMARY KEY     NOT NULL,
-    NAME           TEXT    NOT NULL);
+    ID             SERIAL  PRIMARY KEY,
+    NAME           TEXT    NOT NULL,
+    SURNAME        TEXT    NOT NULL);
