@@ -1,5 +1,5 @@
 import psycopg2
-hostname = '192.168.1.89'
+hostname = 'sqlserver'
 username = 'postgres'
 password = 'password'
 database = 'postgres'
