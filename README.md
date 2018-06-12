@@ -1,14 +1,9 @@
 # Playing with Docker
 
 Go to the project directory.
-Build a Docker image from ```Dockerfile``` using this command:
+Build a Docker images and run containers from ```docker-compose.yml``` using this command:
 ```
-docker build -t myfirstdocker ./main
-```
-
-Then run the container using this command:
-```
-docker run -it -p 8080:80 myfirstdocker:latest
+docker-compose up
 ```
 
 Then open a browser and try these URLS:
