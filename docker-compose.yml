@@ -1,4 +1,4 @@
-version: '3'
+version: '3.2'
 services:
   sqlserver:
     build: ./sql_server
@@ -6,8 +6,12 @@ services:
       - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=password
+      - PGDATA=/data
+    volumes:
+      - type: bind
+        source: ./data
+        target: /data
   webapp:
     build: ./main
     ports:
-      - "8080:80"
-  
+      - "800:80"
